@@ -6,17 +6,17 @@ const inter = Inter({ subsets: ['latin'] })
 
 const TopBar: React.FunctionComponent = () => {
   return (
-    <div className="flex flex-row content-center justify-evenly items-stretch text-center w-full">
-      <Link className="basis-1/6 p-5 my-5" href="/">
+    <div className="sticky top-0 flex flex-row content-center justify-evenly items-stretch text-center w-full bg-slate-900">
+      <Link className="basis-1/6 p-5 my-2" href="/">
         Home
       </Link>
-      <Link className="basis-1/6 p-5 my-5" href="/projects">
+      <Link className="basis-1/6 p-5 my-2" href="/projects">
         Projects
       </Link>
-      <Link className="basis-1/6 p-5 my-5" href="/about">
+      <Link className="basis-1/6 p-5 my-2" href="/about">
         About
       </Link>
-      <Link className="basis-1/6 p-5 my-5" href="/contacts">
+      <Link className="basis-1/6 p-5 my-2" href="/contacts">
         Contacts
       </Link>
     </div>
