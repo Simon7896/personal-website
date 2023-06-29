@@ -1,24 +1,28 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
+import React, { ReactComponentElement } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const TopBar: React.FunctionComponent = () => {
+type TopBarLinkProps = {
+  href: string;
+  children: React.ReactNode;
+} 
+
+const TopBarLink = ({href, children}: TopBarLinkProps) => {
+  return (
+    <Link className='basis-1/6 py-5 flex-grow bg-slate-900 hover:bg-slate-600' href={href}>{children}</Link>
+  )
+}
+
+const TopBar = () => {
   return (
     <div className="sticky top-0 flex flex-row content-center justify-evenly items-stretch text-center w-full bg-slate-900">
-      <Link className="basis-1/6 p-5 my-2" href="/">
-        Home
-      </Link>
-      <Link className="basis-1/6 p-5 my-2" href="/projects">
-        Projects
-      </Link>
-      <Link className="basis-1/6 p-5 my-2" href="/about">
-        About
-      </Link>
-      <Link className="basis-1/6 p-5 my-2" href="/contacts">
-        Contacts
-      </Link>
+      <TopBarLink href="/"><p>Home</p></TopBarLink>
+      <TopBarLink href="/projects"><p>Projects</p></TopBarLink>
+      <TopBarLink href="/about"><p>About</p></TopBarLink>
+      <TopBarLink href="/contacts"><p>Contacts</p></TopBarLink>
     </div>
   )
 }
