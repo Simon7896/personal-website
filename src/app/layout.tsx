@@ -29,7 +29,7 @@ const TopBar = () => {
 
 const Footer = () => {
  return (
-    <div>
+    <div className='bottom-0 text-center'>
       <footer>@2023 Simon Yu</footer>
     </div>
  )
