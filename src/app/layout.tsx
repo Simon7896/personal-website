@@ -21,8 +21,8 @@ const TopBar = () => {
     <div className="sticky top-0 flex flex-row content-center justify-evenly items-stretch text-center w-full bg-slate-900">
       <TopBarLink href="/"><p>Home</p></TopBarLink>
       <TopBarLink href="/projects"><p>Projects</p></TopBarLink>
-      <TopBarLink href="/about"><p>About</p></TopBarLink>
       <TopBarLink href="/contacts"><p>Contacts</p></TopBarLink>
+      <TopBarLink href="/about"><p>About</p></TopBarLink>
     </div>
   )
 }
