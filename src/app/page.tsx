@@ -9,7 +9,7 @@ type SectionProps = {
 
 const SectionBox = ({ bgcolor, children }: SectionProps) => {
   return (
-    <div className={"grow basis-1/2 w-full py-48 self-center flex flex-col justify-center " + bgcolor}>
+    <div className={"grow w-full py-64 self-center flex flex-col justify-center " + bgcolor}>
         { children }
     </div>
   )
