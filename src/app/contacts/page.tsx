@@ -3,6 +3,8 @@ import { FaLinkedin } from "react-icons/fa"
 import { FaDiscord } from "react-icons/fa"
 import { FaInstagram } from "react-icons/fa"
 
+import Form from "./form"
+
 type ContactItemProps = {
     text: string;
     children?: React.ReactNode;
@@ -31,16 +33,8 @@ export default function Page() {
                 <ContactItem text="meepmoopz"><FaDiscord/></ContactItem>
                 <ContactItem text="https://www.instagram.com/meepmoopz/"><FaInstagram/></ContactItem>
             </div>
-            <div className="text-center">
-                <div className="p-64 w-full flex flex-col justify-center bg-slate-800">
-                    <h1 className="text-4xl text-center">Send A Message</h1>
-                    <label className="m-5 flex justify-center text-black">
-                        <textarea name="message" rows={10} cols={40} />
-                    </label>
-                    <div>
-                        <button className="p-4 rounded-full bg-slate-500 text-xl">Submit</button>
-                    </div>
-                </div>
+            <div className="p-64 w-full flex flex-col justify-center bg-slate-800 text-center">
+                <Form></Form>
             </div>
         </div>
     )
