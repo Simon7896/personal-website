@@ -53,22 +53,6 @@ export default function Page() {
             <div className="">
                 <CardGridContainer>
                     <Card href="/" title="Test Title" desc="This is a Test Description for the card component which works very well" img="/vercel.svg" />
-                    <Card href="/" title="Test Title" desc="This is a Test Description for the card component" img="/vercel.svg" />
-                    <Card href="/" title="Test Title" desc="This is a Test Description for the card component" img="/vercel.svg" />
-                    <Card href="/" title="Test Title" desc="This is a Test Description for the card component" img="/vercel.svg" />
-                    <Card href="/" title="Test Title" desc="This is a Test Description for the card component" img="/vercel.svg" />
-                    <Card href="/" title="Test Title" desc="This is a Test Description for the card component" img="/vercel.svg" />
-                    <Card href="/" title="Test Title" desc="This is a Test Description for the card component" img="/vercel.svg" />
-                    <Card href="/" title="Test Title" desc="This is a Test Description for the card component" img="/vercel.svg" />
-                    <Card href="/" title="Test Title" desc="This is a Test Description for the card component" img="/vercel.svg" />
-                    <Card href="/" title="Test Title" desc="This is a Test Description for the card component" img="/vercel.svg" />
-                    <Card href="/" title="Test Title" desc="This is a Test Description for the card component" img="/vercel.svg" />
-                    <Card href="/" title="Test Title" desc="This is a Test Description for the card component" img="/vercel.svg" />
-                    <Card href="/" title="Test Title" desc="This is a Test Description for the card component" img="/vercel.svg" />
-                    <Card href="/" title="Test Title" desc="This is a Test Description for the card component" img="/vercel.svg" />
-                    <Card href="/" title="Test Title" desc="This is a Test Description for the card component" img="/vercel.svg" />
-                    <Card href="/" title="Test Title" desc="This is a Test Description for the card component" img="/vercel.svg" />
-                    <Card href="/" title="Test Title" desc="This is a Test Description for the card component" img="/vercel.svg" />
                 </CardGridContainer>
             </div>
         </div>
