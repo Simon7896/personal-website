@@ -46,7 +46,7 @@ const Card = ({ href, title, desc, img }: CardProps) => {
 export default function Page() {
     return (
         <div className="block">
-            <div className="p-32 w-full flex flex-col justify-center bg-slate-700">
+            <div className="p-64 w-full flex flex-col justify-center bg-slate-700">
                 <h1 className="text-4xl text-center">Projects</h1>
                 <h2 className="text-2xl text-center"></h2>
             </div>
