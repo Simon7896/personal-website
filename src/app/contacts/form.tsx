@@ -22,7 +22,11 @@ export default function Form() {
         notify()
     }
 
-    const notify = () => toast("Message Sent!");
+    const notify = () => toast.success("Message Sent!", {
+        position: "bottom-center",
+        autoClose: 2000,
+        hideProgressBar: true,
+    });
 
     return (
         <div>
