@@ -4,7 +4,6 @@ import { FaDiscord } from "react-icons/fa"
 import { FaInstagram } from "react-icons/fa"
 
 import Form from "./form"
-import Link from "next/link"
 
 type ContactItemProps = {
     text: string;
