@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image";
 
 type Children = {
     children: React.ReactNode;
@@ -33,7 +34,7 @@ const Card = ({ href, title, desc, img }: CardProps) => {
             <Link href={href}>
                 <div className="flex flex-col">
                     <div>
-                        <img src={img} />
+                        <Image src={img} width="500" height="500" alt="Project Logo"/>
                     </div>
                     <h1 className="mt-2 uppercase text-lg font-medium">{title}</h1>
                     <p className="mt-2 font-medium">{desc}</p>
