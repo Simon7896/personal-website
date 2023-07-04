@@ -18,9 +18,9 @@ const ContactItem = ({ text, href, children }: ContactItemProps) => {
             <div className="mx-2">
                 { children }
             </div>
-            <Link href={href}>
+            <a href={href} target="_blank">
                 <h1 className="mx-2">{text}</h1>
-            </Link>
+            </a>
         </div>
     )
 }
