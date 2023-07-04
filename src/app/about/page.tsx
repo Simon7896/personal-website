@@ -23,13 +23,13 @@ export default function Page() {
         <div>
             <AboutSection title="About Me" bgcolor="bg-slate-200" bgcolorDark="bg-slate-700">
                 <p>
-                    Hello! My name is Simon, and welcome to my website! I'm a second year student at Simon Fraser University
+                    Hello! My name is Simon, and welcome to my website! I am a second year student at Simon Fraser University
                     majoring in Computer Science. 
                 </p>
             </AboutSection>
             <AboutSection title="" bgcolor="bg-slate-600" bgcolorDark="bg-slate-600">
                 <p>
-                    From a young age, I've been captivated by the limitless possibilities that technology brings to our world. 
+                    From a young age, I have been captivated by the limitless possibilities that technology brings to our world. 
                     As I entered highschool, my curiosity and fascination for computers and their applications only intensified,
                     and I began to learn about programming and software development.
                     This curiosity eventually led me to pursue a degree in Computer Science at Simon Fraser University.
@@ -48,16 +48,16 @@ export default function Page() {
                     As I continue my academic journey in Computer Science, 
                     I am eagerly seeking internship opportunities that will allow me to further enhance my skills and gain valuable hands-on experience in the industry. 
                     I believe that internships provide a unique opportunity to bridge the gap between theory and practice, 
-                    allowing me to apply the knowledge I've gained in a real-world setting. 
+                    allowing me to apply the knowledge I have gained in a real-world setting. 
                     I am eager to work alongside professionals, learn from their expertise, and contribute to meaningful projects that have a tangible impact. 
                     If you know of any internship opportunities or would like to discuss potential collaborations, 
-                    I would be thrilled to hear from you. Let's connect and explore the possibilities together.
+                    I would be thrilled to hear from you. Let&apos;s connect and explore the possibilities together.
                 </p>
             </AboutSection>
             <AboutSection title="" bgcolor="bg-slate-700" bgcolorDark="bg-slate-700">
                 <p>
                     Thank you for taking the time to learn more about me. If you would like to connect, collaborate, or have any questions, 
-                    please don't hesitate to reach out. I look forward to connecting with fellow computer science enthusiasts, 
+                    please don&apos;t hesitate to reach out. I look forward to connecting with fellow computer science enthusiasts, 
                     mentors, and potential colleagues as I embark on this incredible journey.
                 </p>
             </AboutSection>
