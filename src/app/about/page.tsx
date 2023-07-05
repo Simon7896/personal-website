@@ -1,9 +1,4 @@
 export default function Page() {
-<<<<<<< Updated upstream
-    return (
-        <div className="p-64 w-full flex flex-col justify-center bg-slate-200 dark:bg-slate-700">
-            <h1 className="text-4xl text-center">About Me</h1>
-=======
     
     type AboutSectionProps = {
         title: string;
@@ -66,7 +61,6 @@ export default function Page() {
                     mentors, and potential colleagues as I embark on this incredible journey.
                 </p>
             </AboutSection>
->>>>>>> Stashed changes
         </div>
     )
 }
