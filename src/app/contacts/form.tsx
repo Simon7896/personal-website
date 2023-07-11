@@ -4,7 +4,6 @@ import { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import sendMsg from "./sendMsg";
-import { Toast } from "react-toastify/dist/components";
 
 export default function Form() {
     
@@ -32,7 +31,7 @@ export default function Form() {
         <div>
             <form action={send}>
                 <h1 className="p-5 text-4xl text-center">Send A Message</h1>
-                <label className="flex justify-center">
+                <label className="py-5 flex justify-center">
                     Name:<input 
                         className="mx-5 text-black" 
                         name="name"
@@ -41,7 +40,7 @@ export default function Form() {
                         type="text"
                     />
                 </label>
-                <label className="m-5 flex justify-center text-black">
+                <label className="flex justify-center text-black">
                     <textarea 
                         name="message"
                         value={message}
@@ -50,7 +49,7 @@ export default function Form() {
                         cols={40} 
                     />
                 </label>
-                <button className="p-4 rounded-full bg-slate-500 text-xl" type="submit">Send</button>
+                <button className="ease-in-out duration-300 my-5 p-4 rounded-full bg-slate-500 text-xl hover:scale-110" type="submit">Send</button>
             </form>
             <ToastContainer/>
         </div>
