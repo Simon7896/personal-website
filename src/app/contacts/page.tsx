@@ -2,8 +2,9 @@ import { MdEmail } from "react-icons/md"
 import { FaLinkedin } from "react-icons/fa"
 import { FaDiscord } from "react-icons/fa"
 import { FaInstagram } from "react-icons/fa"
+import PageTransition from "../components/pageTransition"
 
-import Form from "./form"
+import Form from "../components/form"
 
 type ContactItemProps = {
     text: string;
@@ -26,6 +27,7 @@ const ContactItem = ({ text, href, children }: ContactItemProps) => {
 
 export default function Page() {
     return (
+        <PageTransition>
         <div className="flex flex-col">
             <div className="py-64 w-full flex flex-col justify-center bg-slate-700">
                 <h1 className="text-4xl text-center">Contacts</h1>
@@ -40,5 +42,6 @@ export default function Page() {
                 <Form></Form>
             </div>
         </div>
+        </PageTransition>
     )
 }

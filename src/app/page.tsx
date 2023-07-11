@@ -1,5 +1,6 @@
 import Link from "next/link"
 import {MdArrowForward} from "react-icons/md"
+import PageTransition from "./components/pageTransition"
 
 type SectionProps = {
   bgcolor: string;
@@ -40,6 +41,7 @@ const RoundArrowTextButton = ({ href, text }: RoundArrowTextButtonProps) => {
 
 export default function App() {
   return (
+    <PageTransition>
     <div className="flex flex-col items-stretch space-evenly w-full h-fit">
       <Section bgcolor="bg-slate-700" title="Welcome!">
       </Section>
@@ -50,5 +52,6 @@ export default function App() {
         <RoundArrowTextButton href="/contacts" text="Contacts"/>
       </Section>
     </div>
+    </PageTransition>
   )
 }

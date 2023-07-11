@@ -2,7 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import React from 'react'
-import { AnimatePresence } from 'framer-motion'
+import PageTransition from './components/pageTransition'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -50,9 +50,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <TopBar />
-        <AnimatePresence mode='wait' initial={false}>
+        <PageTransition>
           {children}
-        </AnimatePresence>
+        </PageTransition>
         <Footer/>
       </body>
     </html>

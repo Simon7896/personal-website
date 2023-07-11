@@ -1,3 +1,5 @@
+import PageTransition from "../components/pageTransition";
+
 export default function Page() {
     
     type AboutSectionProps = {
@@ -20,6 +22,7 @@ export default function Page() {
     }
 
     return (
+        <PageTransition>
         <div>
             <AboutSection title="About Me" bgcolor="bg-slate-700" bgcolorDark="bg-slate-700">
                 <p>
@@ -62,5 +65,6 @@ export default function Page() {
                 </p>
             </AboutSection>
         </div>
+        </PageTransition>
     )
 }
