@@ -31,7 +31,7 @@ export default function Form() {
     const messageId = useId();
 
     return (
-        <div className="md:w-1/4">
+        <div className="w-3/4 lg:w-1/2">
             <h1 className="p-5 text-4xl text-center flex-col">Send A Message</h1>
             <form action={send} className="flex flex-col justify-center">
                 <label className="py-5 text-xl" htmlFor={nameId}>Name</label>
