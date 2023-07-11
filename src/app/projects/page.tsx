@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image";
 import PageTransition from "../components/pageTransition";
+import TitleBanner from "../components/titleBanner";
 
 type Children = {
     children: React.ReactNode;
@@ -48,17 +49,12 @@ const Card = ({ href, title, desc, img }: CardProps) => {
 export default function Page() {
     return (
         <PageTransition>
-        <div className="block">
-            <div className="p-64 w-full flex flex-col justify-center bg-slate-700">
-                <h1 className="text-4xl text-center">Projects</h1>
-                <h2 className="text-2xl text-center"></h2>
-            </div>
-            <div className="">
+            <div className="block">
+                <TitleBanner name="Projects" bgcolor="bg-slate-700"></TitleBanner>
                 <CardGridContainer>
                     <Card href="/" title="Test Title" desc="This is a Test Description for the card component which works very well" img="/vercel.svg" />
                 </CardGridContainer>
             </div>
-        </div>
         </PageTransition>
     )
 }

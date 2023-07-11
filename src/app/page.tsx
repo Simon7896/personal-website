@@ -1,6 +1,7 @@
 import Link from "next/link"
 import {MdArrowForward} from "react-icons/md"
 import PageTransition from "./components/pageTransition"
+import TitleBanner from "./components/titleBanner";
 
 type SectionProps = {
   bgcolor: string;
@@ -43,8 +44,7 @@ export default function App() {
   return (
     <PageTransition>
     <div className="flex flex-col items-stretch space-evenly w-full h-fit">
-      <Section bgcolor="bg-slate-700" title="Welcome!">
-      </Section>
+      <TitleBanner name="Welcome!" bgcolor="bg-slate-700"></TitleBanner>
       <Section bgcolor="bg-slate-800" title="Check Out My Projects!">
         <RoundArrowTextButton href="/projects" text="Projects"/>
       </Section>

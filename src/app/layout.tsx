@@ -2,7 +2,6 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import React from 'react'
-import PageTransition from './components/pageTransition'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +18,7 @@ const TopBarLink = ({href, children}: TopBarLinkProps) => {
 
 const TopBar = () => {
   return (
-    <div className="sticky top-0 flex flex-row content-center justify-evenly items-stretch text-center w-full bg-slate-400 dark:bg-slate-900">
+    <div className="sticky z-50 top-0 flex flex-row content-center justify-evenly items-stretch text-center w-full bg-slate-400 dark:bg-slate-900">
       <TopBarLink href="/"><p>Home</p></TopBarLink>
       <TopBarLink href="/projects"><p>Projects</p></TopBarLink>
       <TopBarLink href="/contacts"><p>Contacts</p></TopBarLink>
@@ -49,10 +48,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <TopBar />
-        <PageTransition>
+        <TopBar/>
           {children}
-        </PageTransition>
         <Footer/>
       </body>
     </html>

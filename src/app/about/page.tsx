@@ -1,4 +1,5 @@
 import PageTransition from "../components/pageTransition";
+import TitleBanner from "../components/titleBanner";
 
 export default function Page() {
     
@@ -24,7 +25,8 @@ export default function Page() {
     return (
         <PageTransition>
         <div>
-            <AboutSection title="About Me" bgcolor="bg-slate-700" bgcolorDark="bg-slate-700">
+            <TitleBanner name="About Me" bgcolor="bg-slate-700"></TitleBanner>
+            <AboutSection title="" bgcolor="bg-slate-800" bgcolorDark="bg-slate-800">
                 <p>
                     Hello! My name is Simon, and welcome to my website! I am a second year student at Simon Fraser University
                     majoring in Computer Science. 

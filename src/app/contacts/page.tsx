@@ -3,8 +3,8 @@ import { FaLinkedin } from "react-icons/fa"
 import { FaDiscord } from "react-icons/fa"
 import { FaInstagram } from "react-icons/fa"
 import PageTransition from "../components/pageTransition"
-
 import Form from "../components/form"
+import TitleBanner from "../components/titleBanner"
 
 type ContactItemProps = {
     text: string;
@@ -29,9 +29,7 @@ export default function Page() {
     return (
         <PageTransition>
         <div className="flex flex-col">
-            <div className="py-64 w-full flex flex-col justify-center bg-slate-700">
-                <h1 className="text-4xl text-center">Contacts</h1>
-            </div>
+            <TitleBanner name="Contact Me" bgcolor="bg-slate-700"></TitleBanner>
             <div className="grid grid-cols-1 lg:grid-cols-2 text-center text-3xl bg-slate-500">
                 <ContactItem href="mailto:simonyu180@gmail.com" text="simonyu180@gmail.com"><MdEmail/></ContactItem>
                 <ContactItem text="Linkedin" href="https://www.linkedin.com/in/simon-yu-a9053122b"><FaLinkedin/></ContactItem>

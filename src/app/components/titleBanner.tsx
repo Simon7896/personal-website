@@ -10,3 +10,5 @@ const TitleBanner = ({name, bgcolor}: TitleBannerProps) => {
         </div>
     )
 }
+
+export default TitleBanner;
