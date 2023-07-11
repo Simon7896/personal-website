@@ -1,7 +1,8 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
-import React, { ReactComponentElement } from 'react'
+import React from 'react'
+import { AnimatePresence } from 'framer-motion'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -49,7 +50,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <TopBar />
-        {children}
+        <AnimatePresence mode='wait' initial={false}>
+          {children}
+        </AnimatePresence>
         <Footer/>
       </body>
     </html>
