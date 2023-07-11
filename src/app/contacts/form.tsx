@@ -1,10 +1,9 @@
 'use client'
 
-import { useState } from "react";
+import { useId, useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import sendMsg from "./sendMsg";
-import { Toast } from "react-toastify/dist/components";
 
 export default function Form() {
     
@@ -28,29 +27,32 @@ export default function Form() {
         hideProgressBar: true,
     });
 
+    const nameId = useId();
+    const messageId = useId();
+
     return (
-        <div>
-            <form action={send}>
-                <h1 className="p-5 text-4xl text-center">Send A Message</h1>
-                <label className="flex justify-center">
-                    Name:<input 
-                        className="mx-5 text-black" 
-                        name="name"
-                        value={name}
-                        onChange={(e)=>{setName(e.target.value)}}
-                        type="text"
-                    />
-                </label>
-                <label className="m-5 flex justify-center text-black">
-                    <textarea 
-                        name="message"
-                        value={message}
-                        onChange={(e)=>setMessage(e.target.value)}
-                        rows={10} 
-                        cols={40} 
-                    />
-                </label>
-                <button className="p-4 rounded-full bg-slate-500 text-xl" type="submit">Send</button>
+        <div className="w-3/4 lg:w-1/2">
+            <h1 className="p-5 text-4xl text-center flex-col">Send A Message</h1>
+            <form action={send} className="flex flex-col justify-center">
+                <label className="py-5 text-xl" htmlFor={nameId}>Name</label>
+                <input 
+                    id={nameId}
+                    className="p-2 text-black rounded w-full" 
+                    name="name"
+                    value={name}
+                    onChange={(e)=>{setName(e.target.value)}}
+                    type="text"
+                />
+                <label className="py-5 text-xl" htmlFor={messageId}>Message</label>
+                <textarea 
+                    id={messageId}
+                    className="p-2 text-black rounded w-full"
+                    name="message"
+                    value={message}
+                    onChange={(e)=>setMessage(e.target.value)}
+                    rows={5}
+                />
+                <button className="ease-in-out duration-300 my-8 p-4 rounded-full bg-slate-500 text-xl hover:scale-110 w-full" type="submit">Send</button>
             </form>
             <ToastContainer/>
         </div>

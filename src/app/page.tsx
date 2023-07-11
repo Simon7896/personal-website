@@ -31,7 +31,7 @@ type RoundArrowTextButtonProps = {
 
 const RoundArrowTextButton = ({ href, text }: RoundArrowTextButtonProps) => {
   return (
-    <Link href={ href } className="flex flex-row self-center justify-center items-center p-3 m-5 rounded-full bg-slate-700 hover:bg-slate-600">
+    <Link href={ href } className="ease-in-out duration-300 flex flex-row self-center justify-center items-center p-3 m-5 rounded-full bg-slate-700 hover:bg-slate-600 hover:scale-110">
       <p className="text-2xl text-center mx-2">{ text }</p>
       <MdArrowForward/>
     </Link>

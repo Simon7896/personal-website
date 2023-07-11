@@ -10,7 +10,7 @@ export default function Page() {
     const AboutSection = ({title, bgcolor, bgcolorDark, children}: AboutSectionProps) => {        
 
         return (
-            <div className={"m-0 px-64 h-96 w-full flex flex-col justify-center text-justify " + bgcolor + " dark:" + bgcolorDark}>
+            <div className={`m-0 px-64 h-96 w-full flex flex-col justify-center text-justify ${bgcolor} dark:${bgcolorDark}`}>
                 <h1 className="p-5 text-4xl text-center">{title}</h1>
                 <div className="text-xl">
                     {children}
@@ -21,7 +21,7 @@ export default function Page() {
 
     return (
         <div>
-            <AboutSection title="About Me" bgcolor="bg-slate-200" bgcolorDark="bg-slate-700">
+            <AboutSection title="About Me" bgcolor="bg-slate-700" bgcolorDark="bg-slate-700">
                 <p>
                     Hello! My name is Simon, and welcome to my website! I am a second year student at Simon Fraser University
                     majoring in Computer Science. 
