@@ -1,57 +1,51 @@
-import Link from "next/link"
-import {MdArrowForward} from "react-icons/md"
+'use client'
+
 import PageTransition from "./components/pageTransition"
-import TitleBanner from "./components/titleBanner";
+import RoundButton from "./components/roundButton";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
-type SectionProps = {
-  bgcolor: string;
-  title?: string;
-  children: React.ReactNode;
-}
-
-const SectionBox = ({ bgcolor, children }: SectionProps) => {
+const LandingPageContainer = ({}) => {
   return (
-    <div className={"grow w-full py-64 self-center flex flex-col justify-center " + bgcolor}>
-        { children }
+    <div className="w-screen h-screen flex flex-col lg:flex-row items-center bg-slate-700">
+      <motion.div 
+        className="basis-1/2 flex flex-col justify-center items-center"
+        animate={{ opacity:1, x: 0 }}
+        initial={{ opacity:0, x: '-200%' }}
+        transition={{ease: "easeInOut", duration: 1}}
+      >
+        <div className="m-5 p-8">
+          <h2 className="m-2 text-4xl">Hi There! I'm Simon</h2>
+          <h3 className="m-2 text-2xl">
+            I'm a second-year computing science student at SFU passionate about everything related to tech.
+          </h3>
+        </div>
+        <div className="flex flex-column md:flex-row m-5" justify-center>
+          <RoundButton className="bg-slate-500" href="/projects">Check Out My Projects</RoundButton>
+          <RoundButton className="bg-slate-500" href="/contacts">Contact Me</RoundButton>
+        </div>
+      </motion.div>
+      <motion.div 
+        className="basis-1/2 flex justify-center"
+        animate={{ opacity:1, x: 0 }}
+        initial={{ opacity:0, x: '200%' }}
+        transition={{ease: "easeInOut", duration: 1}}
+      >
+        <Image
+          src="/images/landingPage/landingPageImage.png"
+          width={100}
+          height={100}
+          alt="Landing page image"
+        />
+      </motion.div>
     </div>
-  )
-}
-
-const Section = ({ bgcolor, title, children}: SectionProps) => {
-  return (
-    <SectionBox bgcolor={ bgcolor }>
-      <h1 className="text-4xl text-center">{ title }</h1>
-      { children }
-    </SectionBox>
-  )
-}
-
-type RoundArrowTextButtonProps = {
-  href: string;
-  text: string;
-}
-
-const RoundArrowTextButton = ({ href, text }: RoundArrowTextButtonProps) => {
-  return (
-    <Link href={ href } className="ease-in-out duration-300 flex flex-row self-center justify-center items-center p-3 m-5 rounded-full bg-slate-700 hover:bg-slate-600 hover:scale-110">
-      <p className="text-2xl text-center mx-2">{ text }</p>
-      <MdArrowForward/>
-    </Link>
   )
 }
 
 export default function App() {
   return (
     <PageTransition>
-    <div className="flex flex-col items-stretch space-evenly w-full h-fit">
-      <TitleBanner name="Welcome!" bgcolor="bg-slate-700"></TitleBanner>
-      <Section bgcolor="bg-slate-800" title="Check Out My Projects!">
-        <RoundArrowTextButton href="/projects" text="Projects"/>
-      </Section>
-      <Section bgcolor="bg-slate-500" title="Contact Me!">
-        <RoundArrowTextButton href="/contacts" text="Contacts"/>
-      </Section>
-    </div>
+      <LandingPageContainer />
     </PageTransition>
   )
 }
