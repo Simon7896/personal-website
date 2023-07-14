@@ -13,7 +13,7 @@ type CardProps = {
 
 const CardGridContainer = ({ children }: Children) => {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4 m-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-4 p-8 bg-slate-600">
             {children}
         </div>
     )
@@ -21,7 +21,7 @@ const CardGridContainer = ({ children }: Children) => {
 
 const CardBox = ({ children }: Children) => {
     return (
-        <div className="flex flex-col p-4 rounded-lg drop-shadow-lg bg-slate-800 hover:bg-slate-600">
+        <div className="flex flex-col p-4 rounded-lg drop-shadow-lg bg-slate-900 hover:bg-slate-700">
             {children}
         </div>
     )
