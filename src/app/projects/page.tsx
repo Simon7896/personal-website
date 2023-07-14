@@ -1,7 +1,6 @@
 import Link from "next/link"
 import PageTransition from "../components/pageTransition";
 import TitleBanner from "../components/titleBanner";
-import { IconContext } from "react-icons";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 type Children = {
