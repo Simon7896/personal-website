@@ -7,7 +7,7 @@ import AnimatedSentence from "./components/animatedSentence";
 
 const LandingPageContainer = ({}) => {
   return (
-    <div className="w-screen h-screen flex flex-col lg:flex-row items-center bg-slate-700">
+    <div className="w-screen h-screen flex flex-col-reverse lg:flex-row items-center bg-slate-700">
       <motion.div 
         className="basis-1/2 flex flex-col justify-center items-center"
         animate={{ opacity:1, x: 0 }}
@@ -29,8 +29,8 @@ const LandingPageContainer = ({}) => {
           </RoundButton>
         </div>
       </motion.div>
-      <div className="basis-1/2 flex justify-center">
-        <AnimatedSentence className="text-5xl font-mono" text="$ echo &apos;Welcome!&apos;" />
+      <div className="basis-1/2 flex justify-center items-center">
+        <AnimatedSentence className="text-5xl text-center font-mono" text="$ echo &apos;Welcome!&apos;" />
       </div>
     </div>
   )
