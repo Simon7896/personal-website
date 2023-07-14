@@ -43,9 +43,9 @@ export default async function Page() {
             <div className="block">
                 <TitleBanner name="Projects" bgcolor="bg-slate-700"></TitleBanner>
                 <CardGridContainer>
-                { projectRepoJson.map((repo: ProjectRepo) => {
+                { projectRepoJson.map((repo: ProjectRepo, index: number) => {
                     return (
-                        <Card href={repo.html_url} title={repo.name.replaceAll('-', ' ')} desc={repo.description}>
+                        <Card key={repo.name + index} href={repo.html_url} title={repo.name.replaceAll('-', ' ')} desc={repo.description}>
                             <div className="my-2 flex flex-row">
                                 <Link href={repo.html_url} className=""><FaGithub size={28}/></Link>
                                 { repo.homepage === null || repo.homepage === '' ? null : 
