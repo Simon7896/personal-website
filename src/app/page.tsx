@@ -30,7 +30,7 @@ const LandingPageContainer = ({}) => {
         </div>
       </motion.div>
       <div className="basis-1/2 flex justify-center">
-        <AnimatedSentence className="text-5xl font-mono" text="$ echo 'Welcome!'" />
+        <AnimatedSentence className="text-5xl font-mono" text="$ echo &apos;Welcome!&apos;" />
       </div>
     </div>
   )
