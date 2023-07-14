@@ -9,7 +9,7 @@ type ProjectRepo = {
     description: string;
     avatar_url: string;
     html_url: string;
-    homepage: string;
+    has_pages: boolean;
     size: string;
 }
 
@@ -46,12 +46,16 @@ export default async function Page() {
                 { projectRepoJson.map((repo: ProjectRepo, index: number) => {
                     return (
                         <Card key={repo.name + index} href={repo.html_url} title={repo.name.replaceAll('-', ' ')} desc={repo.description}>
-                            <div className="my-2 flex flex-row">
+                            <div className="my-2 flex flex-row space-x-3">
                                 <Link href={repo.html_url} className=""><FaGithub size={28}/></Link>
-                                { repo.homepage === null || repo.homepage === '' ? null : 
-                                    <Link href={repo.homepage}>
+                                { repo.has_pages ? 
+                                    <Link 
+                                        href={`https://simon7896.github.io/${repo.name}`}
+                                        rel="noopener noreferrer"
+                                        target="_blank"
+                                    >
                                         <FaExternalLinkAlt size={28}/>
-                                    </Link>
+                                    </Link> : null
                                 }
                             </div>
                         </Card>
