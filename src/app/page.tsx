@@ -2,8 +2,8 @@
 
 import PageTransition from "./components/pageTransition"
 import RoundButton from "./components/roundButton";
-import Image from "next/image";
 import { motion } from "framer-motion";
+import AnimatedSentence from "./components/animatedSentence";
 
 const LandingPageContainer = ({}) => {
   return (
@@ -21,23 +21,17 @@ const LandingPageContainer = ({}) => {
           </h3>
         </div>
         <div className="flex flex-column md:flex-row m-5" justify-center>
-          <RoundButton className="bg-slate-500" href="/projects">Check Out My Projects</RoundButton>
-          <RoundButton className="bg-slate-500" href="/contacts">Contact Me</RoundButton>
+          <RoundButton className="bg-slate-500" href="/projects">
+            <p className="text-xl">Check Out My Projects</p>
+          </RoundButton>
+          <RoundButton className="bg-slate-500" href="/contacts">
+            <p className="text-xl">Contact Me</p>
+          </RoundButton>
         </div>
       </motion.div>
-      <motion.div 
-        className="basis-1/2 flex justify-center"
-        animate={{ opacity:1, x: 0 }}
-        initial={{ opacity:0, x: '200%' }}
-        transition={{ease: "easeInOut", duration: 1}}
-      >
-        <Image
-          src="/images/landingPage/landingPageImage.png"
-          width={100}
-          height={100}
-          alt="Landing page image"
-        />
-      </motion.div>
+      <div className="basis-1/2 flex justify-center">
+        <AnimatedSentence className="text-5xl font-mono" text="$ echo 'Welcome!'" />
+      </div>
     </div>
   )
 }
