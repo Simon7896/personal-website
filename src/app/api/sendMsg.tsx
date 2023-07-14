@@ -12,7 +12,7 @@ export default async function sendMsg(formData: FormData) {
         host: "smtp.gmail.com",
         auth: {
             user: 's47026454@gmail.com',
-            pass: process.env.password
+            pass: process.env.EMAIL_PASSWORD,
         },
         secure: true,
     })
