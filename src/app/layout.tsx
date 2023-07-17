@@ -12,7 +12,7 @@ type TopBarLinkProps = {
 
 const TopBarLink = ({href, children}: TopBarLinkProps) => {
   return (
-    <Link className='basis-1/6 py-5 flex-grow bg-slate-50 dark:bg-slate-900 bg-transparent hover:bg-slate-600' href={href}>{children}</Link>
+    <Link className='basis-1/6 py-5 flex-grow bg-transparent hover:bg-slate-300 hover:dark:bg-slate-600' href={href}>{children}</Link>
   )
 }
 
