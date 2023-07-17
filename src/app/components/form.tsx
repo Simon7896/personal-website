@@ -52,7 +52,7 @@ export default function Form() {
                     onChange={(e)=>setMessage(e.target.value)}
                     rows={5}
                 />
-                <button className="ease-in-out duration-300 my-8 p-4 rounded-full bg-slate-500 text-xl hover:scale-110 w-full" type="submit">Send</button>
+                <button className="ease-in-out duration-300 my-8 p-4 rounded-full bg-slate-300 dark:bg-slate-500 text-xl hover:scale-110 w-full" type="submit">Send</button>
             </form>
             <ToastContainer/>
         </div>
