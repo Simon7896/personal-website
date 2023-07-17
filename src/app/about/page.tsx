@@ -4,16 +4,13 @@ import TitleBanner from "../components/titleBanner";
 export default function Page() {
     
     type AboutSectionProps = {
-        title: string;
-        bgcolor: string;
-        bgcolorDark: string;
         children: React.ReactNode;
     }
 
-    const AboutSection = ({bgcolor, bgcolorDark, children}: AboutSectionProps) => {        
+    const AboutSection = ({children}: AboutSectionProps) => {        
 
         return (
-            <div className={`text-xl m-0 p-10 lg:p-20 w-full flex flex-col justify-center text-justify space-y-12 ${bgcolor} dark:${bgcolorDark}`}>
+            <div className={`text-xl m-0 p-10 lg:p-20 w-full flex flex-col justify-center text-justify space-y-12 bg-slate-100 dark:bg-slate-600`}>
                 {children}
             </div>
         )
@@ -23,7 +20,7 @@ export default function Page() {
         <PageTransition>
         <div>
             <TitleBanner name="About Me"></TitleBanner>
-            <AboutSection title="" bgcolor="bg-slate-800" bgcolorDark="bg-slate-800">
+            <AboutSection>
                 <p>
                     Hello! My name is Simon, and welcome to my website! I am a second year student at Simon Fraser University
                     majoring in Computer Science. 
