@@ -46,7 +46,7 @@ export default async function Page() {
                 { projectRepoJson.map((repo: ProjectRepo, index: number) => {
                     return (
                         <Card key={repo.name + index} href={repo.html_url} title={repo.name.replaceAll('-', ' ')} desc={repo.description}>
-                            <div className="my-2 flex flex-row space-x-3 fixed bottom-4">
+                            <div className="my-2 flex flex-row space-x-3 relative bottom-0">
                                 <Link href={repo.html_url} className=""><FaGithub size={28}/></Link>
                                 { repo.has_pages ? 
                                     <Link 
