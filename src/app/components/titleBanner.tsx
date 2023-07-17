@@ -9,7 +9,7 @@ type TitleBannerProps = {
 
 const TitleBanner = ({name, bgcolor}: TitleBannerProps) => {
     return (
-        <div className={`py-64 w-full flex flex-col justify-center ${bgcolor}`}>
+        <div className={`py-52 w-full flex flex-col justify-center ${bgcolor}`}>
             <AnimatedSentence className="text-5xl text-center" text={ name } />
         </div>
     )
