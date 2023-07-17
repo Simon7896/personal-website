@@ -21,10 +21,10 @@ const LandingPageContainer = ({}) => {
           </h3>
         </div>
         <div className="flex flex-column md:flex-row m-5" justify-center>
-          <RoundButton className="bg-slate-300 dark:bg-slate-500 text-center" href="/projects">
+          <RoundButton className="bg-slate-300 dark:bg-slate-800 text-center" href="/projects">
             <p className="text-xl">Check Out My Projects</p>
           </RoundButton>
-          <RoundButton className="bg-slate-300 dark:bg-slate-500 text-center" href="/contacts">
+          <RoundButton className="bg-slate-300 dark:bg-slate-800 text-center" href="/contacts">
             <p className="text-xl">Contact Me</p>
           </RoundButton>
         </div>
