@@ -4,12 +4,12 @@ import AnimatedSentence from "./animatedSentence"
 
 type TitleBannerProps = {
     name: string;
-    bgcolor: string;
+    className: string;
 }
 
-const TitleBanner = ({name, bgcolor}: TitleBannerProps) => {
+const TitleBanner = ({name, className}: TitleBannerProps) => {
     return (
-        <div className={`py-52 w-full flex flex-col justify-center ${bgcolor}`}>
+        <div className={`py-52 w-full flex flex-col justify-center ${className}`}>
             <AnimatedSentence className="text-5xl text-center" text={ name } />
         </div>
     )
