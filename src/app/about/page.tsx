@@ -13,7 +13,7 @@ export default function Page() {
     const AboutSection = ({bgcolor, bgcolorDark, children}: AboutSectionProps) => {        
 
         return (
-            <div className={`text-xl m-0 p-2 lg:p-20 w-full flex flex-col justify-center text-justify space-y-12 ${bgcolor} dark:${bgcolorDark}`}>
+            <div className={`text-xl m-0 p-10 lg:p-20 w-full flex flex-col justify-center text-justify space-y-12 ${bgcolor} dark:${bgcolorDark}`}>
                 {children}
             </div>
         )
