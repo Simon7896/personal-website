@@ -22,7 +22,7 @@ export default function Page() {
     return (
         <PageTransition>
         <div>
-            <TitleBanner name="About Me" className="bg-slate-700"></TitleBanner>
+            <TitleBanner name="About Me"></TitleBanner>
             <AboutSection title="" bgcolor="bg-slate-800" bgcolorDark="bg-slate-800">
                 <p>
                     Hello! My name is Simon, and welcome to my website! I am a second year student at Simon Fraser University

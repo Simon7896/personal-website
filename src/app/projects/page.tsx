@@ -41,7 +41,7 @@ export default async function Page() {
     return (
         <PageTransition>
             <div className="flex flex-col min-h-screen">
-                <TitleBanner name="Projects" className="bg-slate-700"></TitleBanner>
+                <TitleBanner name="Projects"></TitleBanner>
                 <CardGridContainer className="flex-grow">
                 { projectRepoJson.map((repo: ProjectRepo, index: number) => {
                     return (
