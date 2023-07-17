@@ -40,13 +40,13 @@ export default async function Page() {
 
     return (
         <PageTransition>
-            <div className="block">
+            <div className="flex flex-col min-h-screen">
                 <TitleBanner name="Projects" bgcolor="bg-slate-700"></TitleBanner>
-                <CardGridContainer>
+                <CardGridContainer className="flex-grow">
                 { projectRepoJson.map((repo: ProjectRepo, index: number) => {
                     return (
                         <Card key={repo.name + index} href={repo.html_url} title={repo.name.replaceAll('-', ' ')} desc={repo.description}>
-                            <div className="my-2 flex flex-row space-x-3">
+                            <div className="my-2 flex flex-row space-x-3 fixed bottom-4">
                                 <Link href={repo.html_url} className=""><FaGithub size={28}/></Link>
                                 { repo.has_pages ? 
                                     <Link 
