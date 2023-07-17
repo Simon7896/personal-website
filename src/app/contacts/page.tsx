@@ -29,7 +29,7 @@ export default function Page() {
     return (
         <PageTransition>
         <div className="flex flex-col">
-            <TitleBanner name="Contact Me" bgcolor="bg-slate-700"></TitleBanner>
+            <TitleBanner name="Contact Me" className="bg-slate-700"></TitleBanner>
             <div className="grid grid-cols-1 lg:grid-cols-2 text-center text-3xl bg-slate-500">
                 <ContactItem href="mailto:simonyu180@gmail.com" text="simonyu180@gmail.com"><MdEmail/></ContactItem>
                 <ContactItem text="Linkedin" href="https://www.linkedin.com/in/simon-yu-a9053122b"><FaLinkedin/></ContactItem>
