@@ -15,6 +15,7 @@ type ProjectRepo = {
 
 async function getRepoData() {
     const res = await fetch('https://api.github.com/users/simon7896/repos', {
+        next: { revalidate: 60 },
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
