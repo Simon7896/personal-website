@@ -9,7 +9,7 @@ type ProjectRepo = {
     description: string;
     avatar_url: string;
     html_url: string;
-    has_pages: boolean;
+    homepage: string;
     size: string;
 }
 
@@ -49,9 +49,9 @@ export default async function Page() {
                         <Card key={repo.name + index} href={repo.html_url} title={repo.name.replaceAll('-', ' ')} desc={repo.description}>
                             <div className="my-2 flex flex-row space-x-3 relative bottom-0">
                                 <Link href={repo.html_url} className=""><FaGithub size={28}/></Link>
-                                { repo.has_pages ? 
+                                { repo.homepage ? 
                                     <Link 
-                                        href={`https://simon7896.github.io/${repo.name}`}
+                                        href={ repo.homepage }
                                         rel="noopener noreferrer"
                                         target="_blank"
                                     >
