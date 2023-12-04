@@ -22,7 +22,7 @@ export default function Page() {
             <TitleBanner name="About Me"></TitleBanner>
             <AboutSection>
                 <p>
-                    Hello! My name is Simon, and welcome to my website! I am a second year student at Simon Fraser University
+                    Hello! My name is Simon, and welcome to my website! I am a third year student at Simon Fraser University
                     majoring in Computer Science. 
                 </p>
                 <p>
