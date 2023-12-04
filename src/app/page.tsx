@@ -17,7 +17,7 @@ const LandingPageContainer = ({}) => {
         <div className="m-5 p-8">
           <h2 className="m-2 text-4xl">Hi There! I&apos;m Simon</h2>
           <h3 className="m-2 text-2xl">
-            I&apos;m a second-year computing science student at SFU passionate about everything related to tech.
+            I&apos;m a third-year computing science student at SFU passionate about everything related to tech.
           </h3>
         </div>
         <div className="flex flex-column md:flex-row m-5" justify-center>
